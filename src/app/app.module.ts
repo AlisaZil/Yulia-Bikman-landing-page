@@ -8,6 +8,7 @@ import { ButtonComponent } from './button/button.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ServiceBlocksComponent } from './service-blocks/service-blocks.component';
 import { ReviewBlockComponent } from './review-block/review-block.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ReviewBlockComponent } from './review-block/review-block.component';
     ButtonComponent,
     HomePageComponent,
     ServiceBlocksComponent,
-    ReviewBlockComponent
+    ReviewBlockComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

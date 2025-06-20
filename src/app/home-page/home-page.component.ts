@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Review } from '../review-block/review-block.component';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'home-page',
@@ -7,6 +8,14 @@ import { Review } from '../review-block/review-block.component';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
+
+  ngOnInit(): void {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      disable: 'mobile'
+    });
+  }
 
   public reviews: Review[] = [
     {

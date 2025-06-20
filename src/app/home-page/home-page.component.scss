@@ -64,6 +64,7 @@
         .read-more-section{
             max-width: 600px;
             margin-left: 160px;
+            transition: 0.4s;
         }
 
         .title{
@@ -88,11 +89,25 @@
         .photo-section{
             margin-right: 160px;
             margin-left: 20px;
+            transition: 0.4s;
             img{
                 width: 790px;
                 height: 364px;
             }
         }
+    }
+
+    .about-me:hover{
+
+        .read-more-section{
+            transition: 0.4s;
+            margin-left: 180px;
+        }
+        .photo-section{
+            margin-right: 180px;
+            transition: 0.4s;
+        }
+
     }
 
     .my-services{

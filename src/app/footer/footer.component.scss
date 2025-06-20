@@ -1,0 +1,56 @@
+@import '../../styles.scss';
+
+.footer{
+    width: 100%;
+    height: 367px;
+    background-color: $secondaryColor;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    p{
+        color: $tertiaryColor;
+    }
+
+    .connect-data-section{
+        margin-left: 160px;
+        width: 390px;
+        height: fit-content;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        .name{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 400;
+            font-size: 29px;
+            margin-bottom: 33px;
+        }
+
+        .ways-to-connect-title{
+            display: flex;
+            align-self: flex-start;
+            justify-content: center;
+            font-size: 17px;
+            margin: 17px 0;
+            p{
+                margin-left: 15px;
+            }
+        }
+
+        .address{
+            margin-top: 10px;
+        }
+    }
+
+    .begin-section{
+
+        margin-left: 350px;
+        .title{
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    }
+}

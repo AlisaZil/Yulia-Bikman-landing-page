@@ -1,6 +1,6 @@
 <div class="page-stracture">
 
-    <div class="banner">
+    <div class="banner" data-aos="fade-up">
 
         <div class="titles">
             <p class="first-title">True wellness begins with understanding and compassion</p>
@@ -15,7 +15,7 @@
         }"></app-button>
     </div>
 
-    <div class="about-me">
+    <div class="about-me" data-aos="fade-up">
         <div class="read-more-section">
             <p class="title">About Me</p>
             <p class="quote">“The good physician treats the disease; the great
@@ -33,12 +33,12 @@
 
         </div>
 
-        <div class="photo-section">
+        <div class="photo-section" >
             <img src="../../assets/photos/drugs-photo.png" alt="drugs-photo">
         </div>
     </div>
 
-    <div class="my-services">
+    <div class="my-services" data-aos="fade-up">
         <p class="title">My Services</p>
         <service-blocks></service-blocks>
 
@@ -47,10 +47,10 @@
             text: 'Read more' 
         }"></app-button>
     </div>
-    <div class="reviews">
+    <div class="reviews" data-aos="fade-up">
 
         <p class="title">Reviews</p>
-        
+
         <div class="review-list">
             <review-block *ngFor="let review of reviews" [review]="review"></review-block>
         </div>

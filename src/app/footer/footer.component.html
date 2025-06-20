@@ -1,0 +1,19 @@
+<div class="footer">
+    <div class="connect-data-section">
+        <p class="name">Dr. Julie Bikhman, D.O.</p>
+
+        <div class="ways-to-connect-title" *ngFor="let item of connectData">
+            <img src="../../assets/svg-icons/{{item.iconName}}.svg" [alt]="item.iconName">
+            <p>{{item.data}}</p>
+        </div>
+
+        <p class="address">120 East 56 Street , suite 530 , New York, NY 10022</p>
+    </div>
+    <div class="begin-section">
+        <p class="title">Let's begin our journey</p>
+        <app-button class="btn" [button]="{
+            type: 'secondary',
+            text: 'Book an Appointment'
+        }"></app-button>
+    </div>
+</div>
