@@ -1,0 +1,61 @@
+<div class="page-stracture">
+
+    <div class="banner">
+
+        <div class="titles">
+            <p class="first-title">True wellness begins with understanding and compassion</p>
+            <p class="secondary-title">Primary care by</p>
+            <p class="name-title">Dr. Julie Bikhman, D.O.</p>
+        </div>
+
+
+        <app-button class="btn" [button]="{ 
+            type: 'primary', 
+            text: 'Book an Appointment' 
+        }"></app-button>
+    </div>
+
+    <div class="about-me">
+        <div class="read-more-section">
+            <p class="title">About Me</p>
+            <p class="quote">“The good physician treats the disease; the great
+            physician treats the patient who has the disease.”</p>
+            <p class="quote-name">- Sir William Osler</p>
+
+            <p class="desc">With over 20 years of experience, Dr. Julie Bikhman combines traditional internal medicine with a holistic, whole-person
+            approach. Her care goes beyond symptoms, looking at lifestyle, emotions, and environment to help each patient heal and
+            thrive.</p>
+
+            <app-button class="btn" [button]="{ 
+                type: 'primary', 
+                text: 'Read more about Julie' 
+            }"></app-button>
+
+        </div>
+
+        <div class="photo-section">
+            <img src="../../assets/photos/drugs-photo.png" alt="drugs-photo">
+        </div>
+    </div>
+
+    <div class="my-services">
+        <p class="title">My Services</p>
+        <service-blocks></service-blocks>
+
+        <app-button class="btn" [button]="{ 
+            type: 'primary', 
+            text: 'Read more' 
+        }"></app-button>
+    </div>
+    <div class="reviews">
+
+        <p class="title">Reviews</p>
+        
+        <div class="review-list">
+            <review-block *ngFor="let review of reviews" [review]="review"></review-block>
+        </div>
+        
+        
+    </div>
+
+</div>

@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+
+.review-block{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+
+    .block{
+        width: 504px;
+        height: 245px;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: -10px 11px 20px rgba(0, 0, 0, 0.08);
+        padding-left: 70px;
+        margin: 40px;
+
+        p{
+            color: $secondaryColor;
+            max-width: 400px;
+            user-select: none;
+            font-size: 18px;
+        }
+        
+        .quote-name{
+            font-family: Poppins-Bold;
+            font-size: 17px;
+            margin-top: 7px;
+        }
+
+        .quote-date{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    }
+    .pesron-img{
+        position: absolute;
+        top: -30px;
+        left: -30px;
+    }
+
+}

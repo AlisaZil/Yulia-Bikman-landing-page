@@ -12,6 +12,12 @@ $tertiaryColor: #FAFAFA;
     src: url('/assets/fonts/Poppins-Bold.ttf');
 }
 
+html,
+body {
+    margin: 0;
+    padding: 0; 
+}
+
 p 
 {
     margin: 0;

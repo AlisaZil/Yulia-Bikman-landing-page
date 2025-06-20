@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+
+.block-section{
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .block{
+        width: 312px;
+        height: 162px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 27px 78px;
+        margin: 10px;
+    }
+
+    .title{
+        font-size: 18px;
+        color: $secondaryColor;
+        max-width: 130px;
+        text-align: center;
+        margin-top: 13px;
+    }
+}
