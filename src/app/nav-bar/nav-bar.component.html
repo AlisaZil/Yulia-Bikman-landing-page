@@ -1,0 +1,19 @@
+<div class="nav-bar">
+
+    <div class="title-logo">
+        <p>Dr. Julie Bikhman, D.O.</p>
+    </div>
+
+    <div class="nav-elements">
+        <div class="nav-element" *ngFor="let routeItem of routeItems">
+            <p class="title">{{routeItem.title}}</p>
+        </div>
+    </div>
+
+    <div class="appoiment-section">
+        <app-button [button]="{
+            type: 'secondary',
+            text: 'Book an Appointment'
+        }"></app-button>
+    </div>
+</div>

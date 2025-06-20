@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+$primaryColor: #45AAFF;
+$secondaryColor: #004580;
+$tertiaryColor: #FAFAFA;
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('/assets/fonts/Poppins-Bold.ttf');
+}
+
+p 
+{
+    margin: 0;
+    font-family: 'Poppins';
+}

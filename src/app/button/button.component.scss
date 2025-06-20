@@ -1,0 +1,54 @@
+@import '../../styles.scss';
+
+.btn{
+    background-color: $primaryColor;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid $primaryColor;
+
+    p{
+        color: $tertiaryColor;
+        font-size: 24px;
+        user-select: none;
+    }
+}
+
+.btn:hover{
+    background-color: transparent;
+    transition: 0.4s;
+    p{
+        color: $primaryColor;
+    }
+}
+
+.secondary{
+    background-color: $tertiaryColor;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid $tertiaryColor;
+
+    p{
+        color: $primaryColor;
+        font-size: 24px;
+        user-select: none;
+    }
+}
+
+.secondary:hover {
+    background-color: transparent;
+    transition: 0.4s;
+
+    p {
+        color: $tertiaryColor;
+    }
+}
+
+.btn:active{
+    transform: scale(0.99);
+}
