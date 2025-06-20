@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'about-me',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent {
+
+   ngOnInit(): void {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        disable: 'mobile'
+      });
+    }
+  
 
 }

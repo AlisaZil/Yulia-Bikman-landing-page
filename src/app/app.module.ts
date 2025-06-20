@@ -11,6 +11,7 @@ import { ReviewBlockComponent } from './review-block/review-block.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyServicesComponent } from './my-services/my-services.component';
+import { PoliciesComponent } from './policies/policies.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MyServicesComponent } from './my-services/my-services.component';
     ReviewBlockComponent,
     FooterComponent,
     AboutMeComponent,
-    MyServicesComponent
+    MyServicesComponent,
+    PoliciesComponent
   ],
   imports: [
     BrowserModule,

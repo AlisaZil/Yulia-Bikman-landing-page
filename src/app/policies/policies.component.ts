@@ -3,11 +3,11 @@ import * as AOS from 'aos';
 
 
 @Component({
-  selector: 'my-services',
-  templateUrl: './my-services.component.html',
-  styleUrls: ['./my-services.component.scss']
+  selector: 'policies',
+  templateUrl: './policies.component.html',
+  styleUrls: ['./policies.component.scss']
 })
-export class MyServicesComponent {
+export class PoliciesComponent {
 
   ngOnInit(): void {
     AOS.init({
@@ -16,5 +16,5 @@ export class MyServicesComponent {
       disable: 'mobile'
     });
   }
-
+  
 }
