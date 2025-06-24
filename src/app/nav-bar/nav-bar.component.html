@@ -4,16 +4,47 @@
         <p>Dr. Julie Bikhman, D.O.</p>
     </div>
 
-    <div class="nav-elements">
-        <div class="nav-element" *ngFor="let routeItem of routeItems">
-            <p class="title">{{routeItem.title}}</p>
+    <ng-container *ngIf="navType === 'computer'; else phone">
+        
+        <div class="nav-elements">
+            <div class="nav-element {{routeItem.isActive? 'active':''}}" *ngFor="let routeItem of routeItems" (click)="navigateTo(routeItem.path)">
+                <p class="title">{{routeItem.title}}</p>
+            </div>
         </div>
-    </div>
-
-    <div class="appoiment-section">
-        <app-button [button]="{
+        
+        <div class="appoiment-section">
+            <app-button
+            [button]="{
             type: 'secondary',
             text: 'Book an Appointment'
-        }"></app-button>
-    </div>
+            }"></app-button>
+        </div>
+
+    </ng-container>
+
+    <ng-template #phone>
+        <div class="hamburger-element" (click)="toggleMenu()">
+          <img src="assets/svg-icons/hamburger.svg" alt="hamburger" />
+        </div>
+      
+        <div
+          class="hamburger-menu"
+          *ngIf="isMenuOpen"
+          @slideMenu
+        >
+          <div
+            class="nav-element-phone {{ routeItem.isActive ? 'active' : '' }}"
+            *ngFor="let routeItem of routeItems"
+            (click)="navigateTo(routeItem.path)"
+          >
+            <img
+              src="assets/svg-icons/{{ routeItem.iconName }}.svg"
+              [alt]="routeItem.iconName"
+            />
+            <p class="title">{{ routeItem.title }}</p>
+          </div>
+        </div>
+      </ng-template>
+    
+    
 </div>

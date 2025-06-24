@@ -13,6 +13,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MyServicesComponent } from './my-services/my-services.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

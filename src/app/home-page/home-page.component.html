@@ -26,15 +26,18 @@
             approach. Her care goes beyond symptoms, looking at lifestyle, emotions, and environment to help each patient heal and
             thrive.</p>
 
-            <app-button class="btn" [button]="{ 
+            <app-button class="btn" 
+            (onClick)="navigateTo($event)"
+            [button]="{ 
                 type: 'primary', 
-                text: 'Read more about Julie' 
+                text: 'Read more about Julie',
+                link: '/about'
             }"></app-button>
 
         </div>
 
         <div class="photo-section" >
-            <img src="../../assets/photos/drugs-photo.png" alt="drugs-photo">
+            <img src="assets/photos/drugs-photo.png" alt="drugs-photo">
         </div>
     </div>
 
@@ -42,9 +45,12 @@
         <p class="title">My Services</p>
         <service-blocks></service-blocks>
 
-        <app-button class="btn" [button]="{ 
+        <app-button class="btn" 
+        (onClick)="navigateTo($event)"
+        [button]="{ 
             type: 'primary', 
-            text: 'Read more' 
+            text: 'Read more',
+            link: '/services'
         }"></app-button>
     </div>
     <div class="reviews" data-aos="fade-up">

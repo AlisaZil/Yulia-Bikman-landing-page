@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Review } from '../review-block/review-block.component';
 import * as AOS from 'aos';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'home-page',
@@ -8,6 +9,9 @@ import * as AOS from 'aos';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
+
+  constructor(private router: Router) {}
+  
 
   ngOnInit(): void {
     AOS.init({
@@ -37,4 +41,9 @@ export class HomePageComponent {
       date: 'Lorem, Ipsum'
     },
   ];
+
+  navigateTo(path: string): void {
+    this.router.navigate([path]);
+
+  }
 }

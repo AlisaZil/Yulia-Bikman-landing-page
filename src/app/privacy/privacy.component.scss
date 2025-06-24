@@ -6,11 +6,45 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
 
     .title {
         font-size: 45px;
         margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    .secondary-title {
+        font-size: 20px;
+        font-family: Poppins-Bold;
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        font-size: 18px;
+        text-align: center;
+        max-width: 1050px;
+        margin: 0 25px;
+        margin-bottom: 60px;
+    }
+    p{
+        user-select: none;
+        color: $secondaryColor;
+    }
+
+    .points-list{
+        user-select: none;
+        color: $secondaryColor;
+        font-family: Poppins;
+        font-size: 18px;
+        max-width: 1000px;
+
+        li{
+            margin: 10px 0;
+        }
     }
 }
