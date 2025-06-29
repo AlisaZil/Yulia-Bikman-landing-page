@@ -28,4 +28,8 @@ export class FooterComponent {
     { data: 'Fax 646-599-4430', iconName: 'arrow' },
   ];
 
+  redirectToAppoint(): void {
+    window.location.href = 'https://www.midtowneastmedical.com/appointment';
+  }
+
 }

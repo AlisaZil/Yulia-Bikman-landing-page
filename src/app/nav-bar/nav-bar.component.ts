@@ -65,11 +65,25 @@ export class NavBarComponent {
   }
 
   navigateTo(path: string): void {
-    this.router.navigate([path]);
-    this.routeItems.forEach(item => {
-      item.isActive = item.path === path;
-    });
+
+    const currPath = path.split('/')[1];
+    
+    
+    if (currPath === 'contact') {
+      const el = document.getElementById(currPath);
+      el?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      this.router.navigate([path]);
+      this.routeItems.forEach(item => {
+        item.isActive = item.path === path;
+      });
+    }
     this.isMenuOpen = false;
+  }
+
+  redirectToAppoint(): void {
+    
+    window.location.href = 'https://www.midtowneastmedical.com/appointment';
   }
 
   ngOnDestroy(): void {

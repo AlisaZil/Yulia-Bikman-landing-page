@@ -9,7 +9,9 @@
         </div>
 
 
-        <app-button class="btn" [button]="{ 
+        <app-button
+        (onClick)="redirectToAppoint()" 
+        class="btn" [button]="{ 
             type: 'primary', 
             text: 'Book an Appointment',
             size: 'small'

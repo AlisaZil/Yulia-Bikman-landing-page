@@ -54,4 +54,7 @@ Dr. Bikhman has been there for me through so much, and I’m endlessly grateful 
     this.router.navigate([path]);
 
   }
+  redirectToAppoint(): void {
+    window.location.href = 'https://www.midtowneastmedical.com/appointment';
+  }
 }

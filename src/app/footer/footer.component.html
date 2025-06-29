@@ -1,10 +1,10 @@
-<div class="footer">
+<div class="footer" id="contact">
     <div class="connect-data-section">
         <p class="name">Dr. Julie Bikhman, D.O.</p>
 
         <div class="begin-section" *ngIf="navType === 'phone'" >
             <p class="title">Let's begin our journey</p>
-            <app-button class="btn" [button]="{
+            <app-button (onClick)="redirectToAppoint()" class="btn" [button]="{
                         type: 'secondary',
                         text: 'Book an Appointment'
                         ,size: 'small'}">
@@ -21,6 +21,7 @@
     <div class="begin-section" *ngIf="navType === 'computer'">
         <p class="title">Let's begin our journey</p>
         <app-button
+        (onClick)="redirectToAppoint()" 
         class="btn" [button]="{
             type: 'secondary',
             text: 'Book an Appointment'
