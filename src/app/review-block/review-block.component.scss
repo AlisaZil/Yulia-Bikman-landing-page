@@ -6,8 +6,9 @@
     position: relative;
 
     margin: 0 20px;
+    cursor: pointer;
 
-    .block{
+    .block {
         width: 504px;
         height: 245px;
         border-radius: 10px;
@@ -18,29 +19,81 @@
         box-shadow: -10px 11px 20px rgba(0, 0, 0, 0.08);
         padding-left: 70px;
         margin: 40px;
-
-        p{
-            color: $secondaryColor;
-            max-width: 400px;
-            user-select: none;
-            font-size: 18px;
+      
+        p {
+            color: #004580;
+                user-select: none;
+                font-size: 18px;
+                max-width: 400px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
         }
-        
-        .quote-name{
-            font-family: Poppins-Bold;
-            font-size: 17px;
-            margin-top: 7px;
+      
+        .quote-name {
+          font-family: Poppins-Bold;
+          font-size: 17px;
+          margin-top: 7px;
         }
-
-        .quote-date{
-            font-size: 14px;
-            margin-top: 5px;
+      
+        .quote-date {
+          font-size: 14px;
+          margin-top: 5px;
         }
-    }
+      }
+      
     .pesron-img{
         position: absolute;
         top: -30px;
         left: -30px;
     }
 
+}
+
+.review-block:active{
+    transition: 0.4s;
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .review-block {
+        margin: 20px;
+        width: 80vw !important;
+
+        .block {
+            width: 100%;
+            height: auto;
+            padding: 25px;
+            margin: 60px 0 20px;
+
+            p {
+                font-size: 15px;
+                -webkit-line-clamp: 4;
+                max-width: 100%;
+            }
+
+            .quote-name {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .quote-date {
+                font-size: 13px;
+                margin-top: 5px;
+            }
+        }
+
+        .pesron-img {
+            // top: -20px;
+            // left: 20px;
+
+            img {
+                width: 50px;
+                height: auto;
+                
+            }
+        }
+    }
 }

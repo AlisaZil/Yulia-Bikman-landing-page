@@ -54,3 +54,32 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        flex-direction: column !important;
+        height: 467px !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        .connect-data-section {
+            margin: 0 !important;
+        }
+        .begin-section{
+            margin: 0 !important;
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-direction: column;
+            p{
+                font-size: 28px !important;
+            }
+        }
+        .connect-data-section{
+            align-items: center !important;
+            justify-content: center !important;
+        }
+    }
+}

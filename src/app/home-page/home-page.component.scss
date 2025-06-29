@@ -164,3 +164,107 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .banner {
+        align-items: center; 
+        text-align: center;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        height: 593px !important;
+
+        .btn{
+            margin: 0 !important;
+        }
+
+        .titles {
+            margin-left: 0;
+            margin-bottom: 30px;
+            margin-left: 0 !important;
+            max-width: 318px !important;
+            margin-top: 130px;
+            
+        }
+        .first-title, .name-title, .secondary-title {
+            max-width: none !important;
+        }
+
+        .first-title{
+            font-size: 30px !important;
+        }
+
+        .btn {
+            margin-left: 0;
+        }
+
+        .secondary-title, .name-title {
+            font-size: 20px !important;
+        }
+    }
+
+    .about-me{
+        height: 700px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        user-select: none;
+
+        .read-more-section{
+            max-width: fit-content;
+            margin: 0 !important;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 375px !important;  
+        }
+        .title{
+            font-size: 28px !important;
+            margin-bottom: 20px;
+        }
+        .quote{
+            font-size: 18px !important;
+        }
+        .quote-name, .desc{
+            font-size: 16px !important;
+        }
+        .btn {
+            margin-left: 0;
+        }
+
+        .photo-section{
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 !important;
+
+            img{
+                width: 90% !important;
+                height: auto !important;
+            }
+        }
+
+        .btn{
+            display: none !important;
+        }
+    }
+
+    .my-services{
+        min-height: 606px !important;
+    }
+
+    .reviews{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+
+        .review-list{
+            padding-left: 0px !important;
+            margin-bottom: 30px;
+        }
+    }
+}

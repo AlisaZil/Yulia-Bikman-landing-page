@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export interface Review { quote: string, name: string, date: string, imgName: string }
 
@@ -10,5 +10,14 @@ export interface Review { quote: string, name: string, date: string, imgName: st
 export class ReviewBlockComponent {
 
   @Input() review?: Review;
+
+  @Output() onClick = new EventEmitter<Review>();
+
+  public isPopupOpen = false;
+  
+  handleClick() {
+    this.onClick.emit(this.review);
+  }
+  
 
 }

@@ -11,7 +11,8 @@
 
         <app-button class="btn" [button]="{ 
             type: 'primary', 
-            text: 'Book an Appointment' 
+            text: 'Book an Appointment',
+            size: 'small'
         }"></app-button>
     </div>
 
@@ -26,12 +27,14 @@
             approach. Her care goes beyond symptoms, looking at lifestyle, emotions, and environment to help each patient heal and
             thrive.</p>
 
-            <app-button class="btn" 
+            <app-button
+            class="btn" 
             (onClick)="navigateTo($event)"
             [button]="{ 
                 type: 'primary', 
                 text: 'Read more about Julie',
-                link: '/about'
+                link: '/about',
+                size: 'small'
             }"></app-button>
 
         </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'service-blocks',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./service-blocks.component.scss']
 })
 export class ServiceBlocksComponent {
-
+  
   public blockList: { title: string, imgName: string }[] = [
     { title: 'Internal Medicine', imgName: 'Internal-Medicine' },
     { title: 'Annual Physical Exam', imgName: 'Annual-Physical-Exam' },

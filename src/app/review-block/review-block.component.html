@@ -1,4 +1,4 @@
-<div class="review-block" *ngIf="review">
+<div class="review-block" *ngIf="review" (click)="isPopupOpen = true">
     <div class="pesron-img">
         <img src="assets/photos/{{review.imgName}}.png" alt="person">
     </div>

@@ -31,3 +31,16 @@
         margin-top: 13px;
     }
 }
+
+@media (max-width: 768px) {
+    .block-section{
+        height: 400px !important;
+        // flex-direction: column;
+        overflow-x: scroll;
+
+        .block{
+            width: 254px;
+            height: 162px;
+        }
+    }
+}
