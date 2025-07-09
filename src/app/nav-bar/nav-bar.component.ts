@@ -28,6 +28,7 @@ export class NavBarComponent {
   public navType: 'phone' | 'computer' = 'computer';
   public isMenuOpen = false;
   private resizeListener!: () => void;
+  public currBtnSize: 'small' | 'large' = 'large';
 
   constructor(private router: Router) { }
   
@@ -49,6 +50,8 @@ export class NavBarComponent {
 
   private updateNavType(): void {
     this.navType = window.innerWidth <= 768 ? 'phone' : 'computer';
+    this.currBtnSize = window.innerWidth <= 1400 ? 'small' : 'large';
+    
   }
   
   public routeItems: { title: string, path: string, isActive: boolean, iconName:string }[] = [
@@ -68,7 +71,6 @@ export class NavBarComponent {
 
     const currPath = path.split('/')[1];
     
-    
     if (currPath === 'contact') {
       const el = document.getElementById(currPath);
       el?.scrollIntoView({ behavior: 'smooth' });
@@ -83,7 +85,7 @@ export class NavBarComponent {
 
   redirectToAppoint(): void {
     
-    window.location.href = 'https://www.midtowneastmedical.com/appointment';
+    window.location.href = 'https://healow.com/apps/provider/julie-bikhman-3634220';
   }
 
   ngOnDestroy(): void {

@@ -18,8 +18,6 @@ export class PrivacyComponent {
   }
   
   redirectToWebsite(url: string) {
-    console.log(url);
-    
     window.location.href = url;
   }
 }

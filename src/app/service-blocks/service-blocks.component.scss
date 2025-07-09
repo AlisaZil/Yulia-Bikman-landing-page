@@ -21,6 +21,12 @@
         flex-direction: column;
         padding: 27px 78px;
         margin: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .block:active{
+        transform: scale(0.98);
     }
 
     .title{

@@ -14,6 +14,8 @@ import { MyServicesComponent } from './my-services/my-services.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReviewPopupComponent } from './review-popup/review-popup.component';
+import { ServicePageComponent } from './service-page/service-page.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutMeComponent,
     MyServicesComponent,
     PoliciesComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    ReviewPopupComponent,
+    ServicePageComponent
   ],
   imports: [
     BrowserModule,

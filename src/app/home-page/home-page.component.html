@@ -42,12 +42,12 @@
         </div>
 
         <div class="photo-section" >
-            <img src="assets/photos/drugs-photo.png" alt="drugs-photo">
+            <img src="assets/photos/Yulia-pic.jpg" alt="drugs-photo">
         </div>
     </div>
 
     <div class="my-services" data-aos="fade-up">
-        <p class="title">My Services</p>
+        <p class="title">Services</p>
         <service-blocks></service-blocks>
 
         <app-button class="btn" 
@@ -58,15 +58,19 @@
             link: '/services'
         }"></app-button>
     </div>
-    <div class="reviews" data-aos="fade-up">
-
+    <div class="reviews"  data-aos="fade-up">
+        
         <p class="title">Reviews</p>
-
+        
         <div class="review-list">
-            <review-block *ngFor="let review of reviews" [review]="review"></review-block>
+            <review-block *ngFor="let review of reviews" [review]="review" (onClick)="openReviewPopup($event)"></review-block>
         </div>
+
         
         
     </div>
 
 </div>
+
+
+<review-popup [review]="currReview" [isOpen]="isReviewOpen" (closed)="isReviewOpen=$event"></review-popup>

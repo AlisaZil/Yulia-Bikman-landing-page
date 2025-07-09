@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'service-blocks',
@@ -8,14 +9,30 @@ import { Component, Input } from '@angular/core';
 export class ServiceBlocksComponent {
   
   public blockList: { title: string, imgName: string }[] = [
-    { title: 'Internal Medicine', imgName: 'Internal-Medicine' },
-    { title: 'Annual Physical Exam', imgName: 'Annual-Physical-Exam' },
-    { title: 'Doctor Consultation', imgName: 'Doctor-Consultation' },
-    { title: 'Women’s Health', imgName: 'Women’s-Health' },
-    { title: 'Sleep Apnea', imgName: 'Sleep-Apnea' },
-    { title: 'Vaccine Administration', imgName: 'Vaccine' },
-    { title: 'Travel Medicine', imgName: 'suitcase' },
-    { title: 'Immigration Services', imgName: 'world' },
-    { title: 'Health Supplements', imgName: 'Health-Supplements' }
-  ]
+    { title: 'Internal Medicine', imgName: 'internal-medicine' },
+    { title: 'Annual Physical Exam', imgName: 'annual-physical-exam' },
+    { title: 'Doctor Consultation', imgName: 'doctor-consultation' },
+    { title: 'Women’s Health', imgName: 'womens-health' },
+    { title: 'Sleep Apnea', imgName: 'sleep-apnea' },
+    { title: 'Vaccine Administration', imgName: 'vaccine-administration' },
+    { title: 'Travel Medicine', imgName: 'travel-medicine' },
+    { title: 'Immigration Services', imgName: 'immigration-services' },
+    { title: 'Health Supplements', imgName: 'health-supplements' }
+  ];
+
+  constructor(private router: Router) {}
+
+  redirectToServicePage(title: string): void {
+    const slug = this.slugify(title);
+    this.router.navigate(['/services', slug]);
+  }
+
+  private slugify(text: string): string {
+    return text
+      .toLowerCase()
+      .replace(/’/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');    
+  }
+
 }

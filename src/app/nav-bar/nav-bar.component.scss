@@ -9,9 +9,10 @@
     align-items: center;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
 
     .title-logo{
-        font-size: 29px;
+        font-size: clamp(20px, 2.5vw, 29px);
         color: $tertiaryColor;
         user-select: none;
         p{
@@ -39,7 +40,8 @@
             .title{
                 user-select: none;
                 color: $tertiaryColor;
-                font-size: 22px;
+                font-size: clamp(14px, 2vw, 22px);
+                white-space: nowrap;
                 padding: 5px 10px;
             }
             
@@ -101,5 +103,47 @@
         .nav-element-phone:hover{
             background-color: darken($color: $tertiaryColor, $amount: 10%);
         }
+    }
+}
+
+@media (max-width: 1400px) {
+    .nav-bar {
+
+        .nav-elements {
+            width: auto;
+            gap: 8px;
+
+            .nav-element .title {
+                font-size: 16px;
+                padding: 4px 6px;
+            }
+        }
+
+        .title-logo {
+            font-size: 20px;
+        }
+
+        .book-appointment-btn {
+            font-size: 14px;
+            padding: 8px 12px;
+        }
+
+        .title-logo{
+            margin-left: 19px;
+        }
+       
+    } }
+
+@media (max-width: 768px) {
+    .nav-bar {
+            justify-content: space-between;
+            padding: 0 !important;
+
+            .hamburger-element{
+                margin-right: 19px;
+            }     
+            .title-logo{
+                margin-left: 19px;
+            }
     }
 }

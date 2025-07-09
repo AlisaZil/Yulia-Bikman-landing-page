@@ -1,5 +1,5 @@
 <div class="block-section">
-    <div class="block" *ngFor="let block of blockList">
+    <div class="block" *ngFor="let block of blockList"  (click)="redirectToServicePage( block.title )">
         <img src="assets/svg-icons/{{block.imgName}}.svg" alt="">
         <p class="title">{{block.title}}</p>
     </div>

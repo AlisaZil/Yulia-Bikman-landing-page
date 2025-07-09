@@ -1,0 +1,120 @@
+@import '../../styles.scss';
+
+.page-stracture {
+    width: 100%;
+    min-height: 800px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+        color: $secondaryColor;
+        user-select: none;
+
+    }
+
+    .title {
+        font-size: 45px;
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+    
+    .img{
+        width: 80px;
+    }
+
+    .desc {
+        font-size: 18px;
+        text-align: center;
+        max-width: 1050px;
+        margin: 0 25px;
+        margin-bottom: 60px;
+        max-width: 700px;
+        margin-top: 30px;
+    }
+}
+
+
+.contact-data {
+    max-width: 700px;
+    margin: 0 25px 60px;
+    color: $secondaryColor;
+    user-select: none;
+    text-align: center;
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        font-family: Poppins;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-family: Poppins;
+
+            strong {
+                color: $primaryColor; // optional highlight for labels
+            }
+
+            a {
+                color: $primaryColor;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .page-stracture {
+        min-height: 744px !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        .title {
+            font-size: 30px !important;
+            // margin-top: 130px !important;
+            margin-bottom: 30px !important;
+        }
+
+        .img {
+            width: 90px;
+            margin-top: 30px;
+        }
+
+        .desc {
+            font-size: 16px !important;
+            max-width: 450px !important;
+            margin: 20px auto 30px auto !important;
+            text-align: center;
+        }
+    }
+
+    .contact-data {
+        max-width: 375px !important;
+        margin: 0 auto 30px auto !important;
+        text-align: center;
+
+        h3 {
+            font-size: 24px !important;
+            margin-bottom: 20px !important;
+        }
+
+        ul li {
+            font-size: 16px !important;
+            margin-bottom: 8px !important;
+        }
+    } 
+}

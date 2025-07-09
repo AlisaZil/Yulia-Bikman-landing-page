@@ -13,10 +13,11 @@
         </div>
         
         <div class="appoiment-section">
-            <app-button (onClick)="redirectToAppoint()"
+            <app-button class="btn" (onClick)="redirectToAppoint()"
             [button]="{
             type: 'secondary',
-            text: 'Book an Appointment'
+            text: 'Book an Appointment',
+            size: currBtnSize
             }"></app-button>
         </div>
 

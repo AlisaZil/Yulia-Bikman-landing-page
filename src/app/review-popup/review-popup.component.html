@@ -1,0 +1,9 @@
+<div class="review-modal"  @fadeAnimation *ngIf="isOpen && review">
+    <div class="modal-backdrop" (click)="close()"></div>
+    <div class="modal-content">
+        <!-- <img *ngIf="review?.imgName" [src]="review.imgName" alt="{{ review.name }}" /> -->
+        <p>{{ review.quote }}</p>
+        <!-- <p class="name"><strong>{{ review.name }}</strong></p> -->
+        <p class="date">{{ review.date }}</p>
+    </div>
+</div>

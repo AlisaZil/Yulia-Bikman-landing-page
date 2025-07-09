@@ -48,3 +48,30 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .page-stracture {
+
+        .title {
+            font-size: 30px !important;
+            // margin-top: 130px !important;
+            // margin-bottom: 30px !important;
+        }
+
+        .secondary-title {
+            font-size: 20px !important;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 16px;
+            text-align: center;
+        }
+        ul, li{
+            font-size: 16px;
+        }
+
+    }
+
+
+}

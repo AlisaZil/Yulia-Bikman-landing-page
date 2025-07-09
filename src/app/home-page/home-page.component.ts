@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent {
 
+  public currReview?: Review;
+  public isReviewOpen: boolean = false;
+
   constructor(private router: Router) {}
   
 
@@ -48,6 +51,12 @@ Dr. Bikhman has been there for me through so much, and I’m endlessly grateful 
       name: 'Courtney Bernabei',
       date: ''
     },
+    {
+      imgName: 'person-4',
+      quote: `I cannot say enough about Dr B. She is truly amazing. But what sets Dr. Bikhman apart is her compassionate approach and thorough attention to detail. She explains things in a clear, approachable way and always involve me in decision-making about my health. Whether it’s preventive care, managing a chronic condition, or just answering questions, Dr. B is incredibly knowledgeable, kind, and supportive. I’m so grateful for her professional care this past decade.`,
+      name: 'Jen Donahue',
+      date: ''
+    }
   ];
 
   navigateTo(path: string): void {
@@ -55,6 +64,12 @@ Dr. Bikhman has been there for me through so much, and I’m endlessly grateful 
 
   }
   redirectToAppoint(): void {
-    window.location.href = 'https://www.midtowneastmedical.com/appointment';
+    window.location.href = 'https://healow.com/apps/provider/julie-bikhman-3634220';
   }
+
+  openReviewPopup(e: Review): void {
+    this.currReview = e;
+    this.isReviewOpen = true;
+  }
+
 }

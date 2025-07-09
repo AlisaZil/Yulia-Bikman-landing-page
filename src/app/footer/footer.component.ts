@@ -29,7 +29,7 @@ export class FooterComponent {
   ];
 
   redirectToAppoint(): void {
-    window.location.href = 'https://www.midtowneastmedical.com/appointment';
+    window.location.href = 'https://healow.com/apps/provider/julie-bikhman-3634220';
   }
 
 }
