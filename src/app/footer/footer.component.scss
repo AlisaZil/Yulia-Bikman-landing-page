@@ -83,3 +83,18 @@
         }
     }
 }
+
+@media (max-width: 420px) {
+    .connect-data-section{
+        width: auto !important;
+    }
+    .ways-to-connect-title {
+        font-size: 15px !important;
+        // margin: 0 !important;
+    }
+
+    .address{
+        width: 230px !important;
+        align-self: baseline !important;
+    }
+}

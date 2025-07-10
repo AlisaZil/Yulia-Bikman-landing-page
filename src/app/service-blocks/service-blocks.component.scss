@@ -39,14 +39,24 @@
 }
 
 @media (max-width: 768px) {
-    .block-section{
-        height: 400px !important;
-        // flex-direction: column;
-        overflow-x: scroll;
+    .block-section {
+        display: grid !important;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2, auto);
+        gap: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        padding: 10px;
+        height: 500px !important;
+        box-sizing: border-box;
+        width: 90vw;
 
-        .block{
+        .block {
+            scroll-snap-align: start;
             width: 254px;
             height: 162px;
+            margin: 0; // prevent gaps from margin in grid layout
         }
     }
 }

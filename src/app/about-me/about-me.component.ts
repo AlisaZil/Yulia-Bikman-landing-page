@@ -18,4 +18,7 @@ export class AboutMeComponent {
     }
   
 
+  redirectToAppoint() {
+    window.open('https://healow.com/apps/provider/julie-bikhman-3634220');
+  }
 }

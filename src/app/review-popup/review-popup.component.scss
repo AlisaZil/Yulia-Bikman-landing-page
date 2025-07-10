@@ -16,7 +16,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 600px;
+        max-width: 800px;
         width: 80%;
         padding: 30px;
         border-radius: 16px;
@@ -24,12 +24,19 @@
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         text-align: start;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            width: 50px;
+            /* height: 80px; */
             object-fit: cover;
             margin-bottom: 16px;
+            position: absolute;
+            top: -3%;
+            left: -2%;
+            display: none;
         }
 
         p {
@@ -45,6 +52,19 @@
 
         .name{
             text-align: end;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content{
+        max-height: 550px !important;
+        p{
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        img{
+            display: block !important;
         }
     }
 }

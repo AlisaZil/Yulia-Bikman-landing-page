@@ -20,7 +20,8 @@
     <p class="quote">“Listen to your patient; they are telling you the diagnosis.”</p>
     <p class="quote-name">— Sir William Osler</p>
 
-    <app-button class="btn" [button]="{
+    <app-button class="btn" (onClick)="redirectToAppoint()" 
+    [button]="{
         type: 'primary',
         text: 'Book an Appointment'
     }"></app-button>
