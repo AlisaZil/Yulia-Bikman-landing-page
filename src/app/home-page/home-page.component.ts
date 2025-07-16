@@ -66,6 +66,9 @@ Dr. Bikhman has been there for me through so much, and I’m endlessly grateful 
   redirectToAppoint(): void {
     window.location.href = 'https://healow.com/apps/provider/julie-bikhman-3634220';
   }
+  redirectToPatientPortal(): void {
+    window.location.href = 'https://health.healow.com/mempc';
+  }
 
   openReviewPopup(e: Review): void {
     this.currReview = e;

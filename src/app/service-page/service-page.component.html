@@ -2,6 +2,7 @@
     <img class="img" src="assets/svg-icons/{{currentService?.id}}.svg" alt="">
     <p class="title">{{currentService?.title}}</p>
     <p class="desc">{{currentService?.content}}</p>
+    <a *ngIf="currentService?.link" href="{{currentService?.link}}">{{currentService?.link}}</a>
 
     <div class="contact-data">
         <h3>Contact Information</h3>

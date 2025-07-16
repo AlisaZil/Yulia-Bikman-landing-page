@@ -14,6 +14,14 @@
         class="btn" [button]="{ 
             type: 'primary', 
             text: 'Book an Appointment',
+            size: 'large'
+        }"></app-button>
+
+        <app-button
+        (onClick)="redirectToPatientPortal()" 
+        class="btn btn-patient" [button]="{ 
+            type: 'primary', 
+            text: 'Patient Portal',
             size: 'small'
         }"></app-button>
     </div>

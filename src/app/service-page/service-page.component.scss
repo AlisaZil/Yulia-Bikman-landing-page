@@ -64,15 +64,18 @@
                 color: $primaryColor; // optional highlight for labels
             }
 
-            a {
-                color: $primaryColor;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+            
         }
+    }
+}
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: large;
+
+    &:hover {
+        text-decoration: underline;
     }
 }
 

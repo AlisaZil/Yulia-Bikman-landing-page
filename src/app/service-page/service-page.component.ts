@@ -10,7 +10,7 @@ import * as AOS from 'aos';
 export class ServicePageComponent {
 
   public serviceId!: string;
-  public serviceData: {id:string, title: string, content:string}[] = [
+  public serviceData: {id:string, title: string, content:string, link?:string}[] = [
     {
       id: 'internal-medicine',
       title: 'Internal Medicine / Primary Care',
@@ -19,22 +19,23 @@ export class ServicePageComponent {
     {
       id: 'annual-physical-exam',
       title: 'Annual Physical Exam',
-      content: 'Annual physicals, routine screenings, vaccinations, and risk assessments tailored to your age, health history, and lifestyle.'
+      content: 'Comprehensive physical exam, routine screenings, vaccinations, and risk assessments tailored to your age, health history, and lifestyle.'
     },
     {
       id: 'doctor-consultation',
       title: 'Doctor Consultation',
-      content: 'Chronic Disease Management: Ongoing care for conditions such as hypertension, diabetes, high cholesterol, asthma, thyroid disorders, and arthritis.'
+      content: 'Acute Illness Treatment: Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues Referrals to specialists and collaboration with other healthcare providers to ensureseamless, well-rounded care.'
     },
     {
-      id: 'vaccine-administration',
-      title: 'Vaccine Administration',
-      content: 'Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues.'
+      id: 'immunization-and-travel-medicine',
+      title: 'Immunization and Travel Medicine',
+      content: 'Acute Illness Treatment: Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues Referrals to specialists and collaboration with other healthcare providers to ensure seamless, well-rounded care.'
     },
     {
       id: 'health-supplements',
       title: 'Health Supplements',
-      content: 'Referrals to specialists and collaboration with other healthcare providers to ensure seamless, well-rounded care.'
+      content: 'Dr. Bikhman may recommend specific supplements to optimize overall health and support any current medications you may be taking.',
+      link: 'https://us.fullscript.com/patient-signup'
     },
     {
       id: 'womens-health',
@@ -58,7 +59,7 @@ export class ServicePageComponent {
     }
   ];
 
-  currentService?: {id:string, title:string, content:string};
+  currentService?: {id:string, title:string, content:string, link?:string};
   
 
   constructor(private route: ActivatedRoute) {
