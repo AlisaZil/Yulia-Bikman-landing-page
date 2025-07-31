@@ -1,0 +1,30 @@
+<div class="page-stracture" data-aos="fade-up">
+    <div class="contact-form">
+        <p class="title">Contact Us</p>
+        <p class="desc">Dr. Julie Bikhman, D.O.</p>
+
+        <div class="input-section">
+            <div class="input-block">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="input-block">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-block">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Type your message here"></textarea>
+            </div>
+        </div>
+
+           <app-button
+        class="btn" [button]="{ 
+            type: 'primary', 
+            text: 'Submit',
+            size: 'large'
+        }"></app-button>
+    </div>
+</div>

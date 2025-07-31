@@ -16,6 +16,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReviewPopupComponent } from './review-popup/review-popup.component';
 import { ServicePageComponent } from './service-page/service-page.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ServicePageComponent } from './service-page/service-page.component';
     PoliciesComponent,
     PrivacyComponent,
     ReviewPopupComponent,
-    ServicePageComponent
+    ServicePageComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

@@ -58,7 +58,7 @@ export class NavBarComponent {
     { title: 'Home', path: '/home', isActive: true, iconName: 'home' },
     { title: 'About', path: '/about', isActive: false, iconName: 'profile' },
     { title: 'Services', path: '/services', isActive: false, iconName: 'service' },
-    { title: 'Contact Us', path: '/contact', isActive: false, iconName: 'envelope' },
+    { title: 'Contact Us', path: '/contact-us', isActive: false, iconName: 'envelope' },
     { title: 'Policies', path: '/policies', isActive: false, iconName: 'shield' },
     { title: 'Privacy', path: '/privacy', isActive: false, iconName: 'privacy' }
   ];
@@ -71,15 +71,17 @@ export class NavBarComponent {
 
     const currPath = path.split('/')[1];
     
-    if (currPath === 'contact') {
-      const el = document.getElementById(currPath);
-      el?.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      this.router.navigate([path]);
+    // if (currPath === 'contact') {
+    //   const el = document.getElementById(currPath);
+    //   el?.scrollIntoView({ behavior: 'smooth' });
+    // } else {
+      
+    // }
+
+    this.router.navigate([path]);
       this.routeItems.forEach(item => {
         item.isActive = item.path === path;
       });
-    }
     this.isMenuOpen = false;
   }
 
