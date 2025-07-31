@@ -6,25 +6,26 @@
         <div class="input-section">
             <div class="input-block">
                 <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter your name" [(ngModel)]="name" name="name" />
             </div>
 
             <div class="input-block">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+                <input type="email" id="email" placeholder="Enter your email" [(ngModel)]="email" name="email" />
             </div>
 
             <div class="input-block">
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Type your message here"></textarea>
+                <textarea id="message" placeholder="Type your message here" [(ngModel)]="message"
+                    name="message"></textarea>
             </div>
         </div>
 
-           <app-button
-        class="btn" [button]="{ 
-            type: 'primary', 
-            text: 'Submit',
-            size: 'large'
-        }"></app-button>
+        <app-button (onClick)="submitForm()" class="btn" [button]="{ 
+        type: 'primary', 
+        text: 'Submit',
+        size: 'large'
+      }">
+        </app-button>
     </div>
 </div>

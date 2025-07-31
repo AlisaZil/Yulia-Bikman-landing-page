@@ -20,6 +20,7 @@
     "@angular/router": "^16.2.0",
     "angular-cli-ghpages": "^2.0.3",
     "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "http-server": "^14.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
