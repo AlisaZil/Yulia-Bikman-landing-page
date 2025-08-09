@@ -9,6 +9,12 @@ import * as AOS from 'aos';
 })
 export class PoliciesComponent {
 
+  selectedPolicy: string = 'credit'; // default selection
+
+  selectPolicy(policy: string) {
+    this.selectedPolicy = policy;
+  }
+
   ngOnInit(): void {
     AOS.init({
       duration: 1000,

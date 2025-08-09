@@ -24,12 +24,12 @@ export class ServicePageComponent {
     {
       id: 'doctor-consultation',
       title: 'Doctor Consultation',
-      content: 'Acute Illness Treatment: Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues Referrals to specialists and collaboration with other healthcare providers to ensureseamless, well-rounded care.'
+      content: 'Acute Illness Treatment: Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues. Referrals to specialists and collaboration with other healthcare providers to ensure seamless, well-rounded care.'
     },
     {
       id: 'immunization-and-travel-medicine',
       title: 'Immunization and Travel Medicine',
-      content: 'Acute Illness Treatment: Timely evaluation and treatment of common illnesses such as infections, colds, flu, allergies, digestive issues Referrals to specialists and collaboration with other healthcare providers to ensure seamless, well-rounded care.'
+      content: 'Dr. Bikhman provides age-appropriate vaccination according to CDC guidelines as well as travel vaccination.'
     },
     {
       id: 'health-supplements',
@@ -46,11 +46,6 @@ export class ServicePageComponent {
       id: 'sleep-apnea',
       title: 'Sleep Apnea',
       content: 'Symptoms such as loud snoring, witnessed apneas, morning headaches, and daytime fatigue are suggestive of sleep apnea. We do sleep apnea test with home sleep apnea test kit and refer to sleep specialist for appropriate treatment such as oral appliance or CPAP machine or surgery.'
-    },
-    {
-      id: 'travel-medicine',
-      title: 'Travel Medicine',
-      content: 'Dr. Bikhman provides appropriate age vaccination according to CDC guidelines as well as travel vaccination.'
     },
     {
       id: 'immigration-services',

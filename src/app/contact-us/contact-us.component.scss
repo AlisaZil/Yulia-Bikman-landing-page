@@ -46,36 +46,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .page-stracture {
-
-        .title {
-            font-size: 30px !important;
-            // margin-top: 130px !important;
-            // margin-bottom: 30px !important;
-        }
-
-        .secondary-title {
-            font-size: 20px !important;
-            text-align: center;
-        }
-
-        .desc {
-            font-size: 16px;
-            text-align: center;
-        }
-
-        ul,
-        li {
-            font-size: 16px;
-        }
-
-    }
-
-
-}
-
-
 .contact-form{
     height: 700px;
     width: 700px;
@@ -88,7 +58,7 @@
     box-shadow: -10px 11px 20px rgba(0, 0, 0, 0.08);
 
     input, textarea{
-        height: 70px;
+    height: 70px;
     width: 500px;
     border-radius: 2px;
     outline: none;
@@ -115,13 +85,48 @@
     }
 
     .input-block {
-width: 90%;
-    font-family: "Poppins";
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-direction: column;
+        width: 90%;
+        font-family: "Poppins";
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
 
+@media (max-width: 768px) {
+    .page-stracture {
+
+        overflow-y: hidden;
+        .title {
+            font-size: 35px !important;
+            // margin-top: 130px !important;
+        }
+
+        .secondary-title {
+            font-size: 25px !important;
+            text-align: center;
+        }
+
+        .desc {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        ul,
+        li {
+            font-size: 16px;
+        }
+
+    }
+    .contact-form{
+        height: 800px !important;
+        width: 600px !important;
+        input, textarea{
+            width: 400px !important;
+        }
+    }
 
 }
+

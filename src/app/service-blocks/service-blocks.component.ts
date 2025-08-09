@@ -15,7 +15,6 @@ export class ServiceBlocksComponent {
     { title: 'Women’s Health', imgName: 'womens-health' },
     { title: 'Sleep Apnea', imgName: 'sleep-apnea' },
     { title: 'Immunization and Travel Medicine', imgName: 'immunization-and-travel-medicine' },
-    { title: 'Travel Medicine', imgName: 'travel-medicine' },
     { title: 'Immigration Services', imgName: 'immigration-services' },
     { title: 'Health Supplements', imgName: 'health-supplements' }
   ];
