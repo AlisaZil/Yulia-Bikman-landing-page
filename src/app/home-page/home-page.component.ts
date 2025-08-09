@@ -56,6 +56,33 @@ Dr. Bikhman has been there for me through so much, and I’m endlessly grateful 
       quote: `I cannot say enough about Dr B. She is truly amazing. But what sets Dr. Bikhman apart is her compassionate approach and thorough attention to detail. She explains things in a clear, approachable way and always involve me in decision-making about my health. Whether it’s preventive care, managing a chronic condition, or just answering questions, Dr. B is incredibly knowledgeable, kind, and supportive. I’m so grateful for her professional care this past decade.`,
       name: 'Jen D.',
       date: ''
+    },
+    {
+      imgName: 'person-5',
+      quote: `Dr. Julie Bikhman has been my physician for over 10 years, and I wouldn't go anywhere else.
+
+I always feel heard, respected, and well-cared for during every visit.
+
+Dr. Bikhman dedication, knowledge, and patient-centered approach are truly outstanding.
+
+I consistently receive excellent care and always feel confident in her advice.
+
+If you're looking for a doctor who truly cares and delivers top-notch medical attention, look no further!"
+
+ 
+
+Best Regards,
+Alex T.`,
+      name: 'NB.',
+      date: ''
+    },
+    {
+      imgName: 'person-6',
+      quote: `I cannot say enough about Dr B. She is truly amazing. 
+
+But what sets Dr. Bikhman apart is her compassionate approach and thorough attention to detail. She explains things in a clear, approachable way and always involve me in decision-making about my health. Whether it’s preventive care, managing a chronic condition, or just answering questions, Dr. B is incredibly knowledgeable, kind, and supportive. I’m so grateful for her professional care this past decade.`,
+      name: '',
+      date: ''
     }
   ];
 
