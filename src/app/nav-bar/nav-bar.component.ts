@@ -52,6 +52,7 @@ export class NavBarComponent {
     this.navType = window.innerWidth <= 768 ? 'phone' : 'computer';
     this.currBtnSize = window.innerWidth <= 1400 ? 'small' : 'large';
     
+    
   }
   
   public routeItems: { title: string, path: string, isActive: boolean, iconName:string }[] = [

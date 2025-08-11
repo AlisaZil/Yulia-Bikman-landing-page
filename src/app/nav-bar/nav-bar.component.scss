@@ -10,6 +10,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
+    overflow-x: hidden;
 
     .title-logo{
         user-select: none;
@@ -140,6 +141,13 @@
        
     } }
 
+@media (max-width: 1140px) {
+::ng-deep{
+        .btn{
+            margin-left: 0px !important;
+        }
+    }
+}
 @media (max-width: 768px) {
     .nav-bar {
             justify-content: space-between;
