@@ -13,7 +13,8 @@
 
     p{
         color: $tertiaryColor;
-        font-size: 24px;
+        font-size: clamp(14px, 2vw, 22px);
+        white-space: nowrap;
         user-select: none;
     }
 }

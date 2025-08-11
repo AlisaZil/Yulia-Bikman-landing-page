@@ -133,6 +133,7 @@
             padding: 8px 12px;
         }
 
+
         .title-logo{
             margin-left: 19px;
         }
@@ -152,4 +153,10 @@
             }
     }
 }
-
+.btn{
+    ::ng-deep{
+        .btn{
+            margin-left: 50px !important;
+        }
+    }
+}
