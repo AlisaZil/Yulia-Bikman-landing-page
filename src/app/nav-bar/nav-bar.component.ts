@@ -50,8 +50,7 @@ export class NavBarComponent {
 
   private updateNavType(): void {
     this.navType = window.innerWidth <= 768 ? 'phone' : 'computer';
-    this.currBtnSize = window.innerWidth <= 1400 ? 'small' : 'large';
-    
+    this.currBtnSize = window.innerWidth <= 1400 ? 'small' : 'large';    
     
   }
   

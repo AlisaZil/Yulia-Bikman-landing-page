@@ -25,7 +25,7 @@ export class ContactUsComponent {
      const subject = encodeURIComponent(`Contact from ${this.name}`);
   const body = encodeURIComponent(`${this.message}\n\nFrom: ${this.name} <${this.email}>`);
   
-  const mailtoLink = `mailto:Alisazilberman@gmail.com?subject=${subject}&body=${body}`;
+  const mailtoLink = `mailto:jbikhman@hotmail.com?subject=${subject}&body=${body}`;
   
   window.location.href = mailtoLink;
   } 
